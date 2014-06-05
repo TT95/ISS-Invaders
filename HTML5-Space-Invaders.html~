@@ -36,8 +36,8 @@
             div.field {display: block; position: absolute; text-align: center;}         
             div.livesField {padding-left: 1em;}
             div.scoreField {padding: 1em;}
-            div.menuFieldFrame {padding: 3em; border: 3px solid #0f0; background: black;}
-            div.instructionsFieldFrame {padding: 3em; border: 3px solid #0f0;  text-align: left;}
+            div.menuFieldFrame {padding: 3em; border: 3px solid #0f0; background: #000;}
+            div.instructionsFieldFrame {padding: 3em; border: 3px solid #0f0; background: #000; text-align: left;}
             .clickText {cursor: pointer;}
             p#copyright a:hover, .clickText:hover {color: #0f0;}
 
@@ -47,7 +47,6 @@
             p#play {
                 display: block;
                 overflow: hidden;
-                
             }           
             #span_container {
                 display: inline-block;
@@ -56,8 +55,6 @@
                 transition: left 4s linear 2s;  
                 -webkit-transition: left 4s linear 2s;  
                 -moz-transition: left 4s linear 2s; 
-               
-
             }           
             #span_y {
                 display: inline-block;
@@ -532,8 +529,8 @@
                     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!                      
                     var sky = {
                         stars: null,
-                        starsLayer: 0,
-                        k_star_number: 0,
+                        starsLayer: 3,
+                        k_star_number: 30,
                         
                         init: function() {
                             this.stars = [];
@@ -1649,9 +1646,9 @@
       
             #game { 
                 margin-top: -639px;
-                
-                width: 1078px;
-                height: 608px;
+                border: 1px solid blue;
+                width: 1080px;
+                height: 639px;
 		margin: auto;
             }
 	    #wrap {
